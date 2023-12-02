@@ -119,6 +119,7 @@
         background-color: #0037AE;
         margin-left: 55px;
         margin-right: 55px;
+        border-radius: 6px;
     }
 
     .intro{
@@ -366,6 +367,7 @@
         background-color: #0037AE;
         margin-left: 150px;
         margin-right: 150px;
+        border-radius: 6px;
     }
     .intro{
         margin-left:50px;
@@ -620,6 +622,7 @@
         background-color: #0037AE;
         margin-left: 340px;
         margin-right: 340px;
+        border-radius: 6px;
     }
     .intro{
         margin-left:50px;
