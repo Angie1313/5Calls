@@ -424,7 +424,12 @@ footer ul {
     text-align: center;
 }
 
+.space{
+    background-color: #F9FCFB;
+    height:50px;
+    width:100%;
 
+}
 .section-4-boxes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
