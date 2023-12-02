@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--scroll-padding, 60px);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -294,4 +300,184 @@ a:active {
       visibility: visible;
     }
   }
+}
+
+footer {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.07em
+}
+
+footer ul  {
+    list-style-type: none;
+    Display: flex;
+    Flex-direction: row;
+    padding: 10px;
+}
+
+footer li a {
+    text-decoration: none;
+    color: black;
+}
+
+#left-list li {
+    margin-right: 10px; 
+}
+
+#list3 li {
+    margin-right: 10px; 
+}
+#list2 li {
+    margin-right: 10px; 
+}
+
+#social-list li {
+    margin-right: 10px;
+    font-size: 1.6rem; 
+}
+
+#social-list li a:active i {
+    filter: brightness(0%); 
+}
+
+ #social-list li:nth-child(1) a i{
+    color: rgb(29, 161, 242); 
+}
+
+#social-list li:nth-child(2) a i {
+    color: rgb(234, 54, 97);
+}
+
+#social-list li:nth-child(3) a i {
+    color: rgb(44, 101, 245); 
+}
+
+#social-list li:nth-child(4) a i {
+    color: rgb(140, 41, 255); 
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+.social-and-left-list {
+    display: flex;
+    justify-content: space-between;
+}
+#submit{
+    border-radius: 6px;
+}
+
+
+
+.logo img {
+    width: auto;
+    height: 4em;
+    display: inline-block;
+    max-height: 100%;
+}
+
+.logo, .navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar li {
+    font-family: 'Montserrat';
+    margin-right: 20px;
+    color: #F9FCFB;
+
+}
+
+.navigation {
+    width: 100%;
+    padding: 7px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0037AE;
+    position: fixed;
+    z-index: 10;
+    text-transform: uppercase;
+
+}
+
+.navigation ul {
+    list-style-type: none;
+    display: flex;
+    Flex-direction: row;
+}
+
+.navbar li a {
+    color: #F9FCFB;
+    font-weight: bold;
+}
+
+.navbar li a, .button {
+    text-decoration: none;
+}
+
+.navbar li a:hover, .navbar li a:active {
+    color: #C84845;
+}
+
+#carat:hover, #carat:active {
+    color: #C84845;
+}
+
+
+.nav-donate .donate-button {
+    color: #0037AE;
+    background-color: #F9FCFB;
+    padding: 8px 14px;
+    border-radius: 6px;
+}
+
+
+
+  @media only screen and (max-width: 767px) {
+    .introinfo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intoimg {
+        order: 1;
+        margin-bottom: 20px; /* Adjust the margin as needed */
+        
+    }
+
+    .introtext {
+        order: 2;
+    }
+
+    header {
+        text-align: center; /* Center the content */
+        
+    }
+
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    header {
+        text-align: center; /* Center the content */
+        flex-direction: column;
+    }
+
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Add any other styles or adjustments as needed */
 }
