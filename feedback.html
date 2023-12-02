@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="feedback.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -54,7 +54,7 @@
     <p>
         Dear Advocates,
         <br><br>
-        If you're passionate about a cause that isn't currently represented on our platform, we encourage you to let us know. Your feedback is invaluable, and we are committed to expanding our coverage based on the issues that matter most to our advocates. Your voice can make a difference, so don't hesitate to reach out. <br><br>For a step-by-step guide on using our site, please refer to our FAQ and Common Questions Picture Guide. If you still have questions or need assistance, feel free to email us at hello@5calls.org or use the form below. We appreciate your dedication to making a positive impact!
+        If you're passionate about a cause that isn't currently represented on our platform, we encourage you to let us know. Your feedback is invaluable, and we are committed to expanding our coverage based on the issues that matter most to our advocates. Your voice can make a difference, so don't hesitate to reach out. <br><br>For a step-by-step guide on using our site, please refer to our FAQ and Common Questions Picture Guide. If you still have questions or need assistance, feel free to email us at hello@5calls.org or use the form below. <br> <br> We appreciate your dedication to making a positive impact!
     </p>
 </div>
 
@@ -71,12 +71,13 @@
     <div class="sub">
         <fieldse>
             <legend></legend>
-            <form>
+            <form id="submissionForm">
                 <p>
                     <label>Name: <br> <input name="Name" required /></label>
                 </p>
                 <p>
-                    <label>E-mail: <br> <input name="email" type="email" required /></label>
+                    <label>E-mail: <br> <input id="emailInput" name="email" type="email" /></label>
+                    <span id="emailError" style="color: red;"></span>
                 </p>
                 <p>
                     <label>Phone(Optional): <br> <input name="phone number" /></label>
@@ -85,7 +86,7 @@
                     <!--radio buttons??-->
 
                     <label> Submission Type: <br>
-                        <select name="type">
+                        <select name="type" required>
                             <option>--None--</option>
                             <option>Issue Suggestion</option>
                             <option>Feedback</option>
@@ -103,7 +104,7 @@
                 </textarea>
                 </p>
                 <p>
-                    <button type="submit">SUBMIT</button>
+                    <button type="submit" onclick="validateForm()">SUBMIT</button>
                 </p>
             </form>
         </fieldset>
