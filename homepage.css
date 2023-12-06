@@ -263,7 +263,7 @@ h3 {
 }
 
 
-#get-started:hover, #learn-more:hover, .donate-button:hover, #see-all-button:hover {
+#get-started:hover, #learn-more:hover, #see-all-button:hover {
     background-color: #73d1d1;
     color: #0037AE;
     cursor: pointer;
@@ -394,116 +394,108 @@ ol.how-to li {
 }
 
 
-footer {
-    margin: 0;
-    padding: 0;
-
-}
-
-footer ul {
-    list-style-type: none;
-    Display: flex;
-    Flex-direction: row;
-}
-
-.social-and-list2 {
-    display: flex;
-    justify-content: space-between;
-}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-}
-
-
-#section4 {
-    text-align: center;
-}
-
-.space{
+/* .space{
     background-color: #F9FCFB;
     height:50px;
     width:100%;
 
-}
-.section-4-boxes {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    /* Adjust the gap as needed */
-    margin: 0 15%;
-}
+} */
 
 
-.section-4-item {
-    padding: 20px;
-    /* Add padding for better spacing */
-    background-color: #D8ECEC;
-    border-radius: 4px;
-    /* Optional: Add border radius for rounded corners */
-}
-
-.section-4-item p {
-    margin: 0;
-    /* Remove default margin for the paragraphs */
-}
 
 
 /* -------------------------------------------------------------------------- */
-/*                                  section 5                                 */
+/*                          section 6 why calling works                        */
 /* -------------------------------------------------------------------------- */
 
-
-/* -------------------------------------------------------------------------- */
-/*                         section 6 why calling works                        */
-/* -------------------------------------------------------------------------- */
 #section6 {
-    padding: 50 0;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0037AE;
 }
 
-/* ---------------------------- section 6 block 1 --------------------------- */
+/* ----------------------------  section 6 block 1 --------------------------- */
+
 .section-6-block-1 {
-    max-width: 90%;
-    margin: 0 auto;
-    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 80vw;
+    max-width: 1000px;
+    text-align: center;
+    color: #F9FCFB;
+}
+
+.section-6-block-1 p {
+    max-width: 450px; 
+    margin: 0 auto; 
+    font-size: 1.125em;
 }
 
 .section-6-block-1 h2 {
-    padding-bottom: 30px;
+    font-size: 2.5em;
+    font-weight: 400;
+    letter-spacing: 4px;
 }
 
-/* ---------------------------- section 6 block 2 --------------------------- */
+
+/* ---------------------------- section6-2 --------------------------- */
+
+#section6-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9FCFB;
+}
 
 .section-6-block-2 {
-    padding: 20 0
-}
-
-.no-matter {
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 0 30;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 80vw;
+    max-width: 1000px;
+    text-align: center;
+    
 }
 
-#no-matter1 {
-    padding: 20px;
+.section-6-block-2 p {
+    max-width: 500px; 
+    margin: 0 auto; 
+    font-size: 1.125em;
 }
 
-#no-matter2 {
-    padding: 20px;
+span {
+    font-weight: bold;
 }
 
-/* ---------------------------- section 6 block 3 --------------------------- */
 
-.section-6-block-3 {
+.section-6-block-2 h2 {
+    font-size: 2.5em;
+
+}
+
+
+/* ---------------------------- section6-3--------------------------- */
+#section6-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
     background-color: #0037AE;
     color: #F9FCFB;
-    padding: 20px 0px;
+}
+
+#section6-3 h2 {
+    font-size: 2em;
+    
 }
 
 .testimonials {
@@ -511,13 +503,8 @@ footer ul {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 30;
-}
-
-.testimonial-item {
-    /* flex: 1;
-        box-sizing: border-box; */
-    padding: 0 30;
+    padding: 2em; 
+    max-width: 1350px;
 }
 
 #vox {
@@ -536,13 +523,10 @@ footer ul {
     max-width: 75%;
 }
 
-
-
 .testimonial-logo {
     width: auto;
     height: 1.5em;
 }
-
 
 .testimonial-item a {
     text-decoration: none;
@@ -583,99 +567,133 @@ footer ul {
 }
 
 /* -------------------------------------------------------------------------- */
-/*                         section 7 who to call first                        */
+/*                         section 4 tips                       */
 /* -------------------------------------------------------------------------- */
 
-#section7 {
-    padding: 30px 0px;
-}
-
-#section7 h2 {
-    text-align: center;
-}
-
-.section-7-content {
-    margin: 5% 10%;
+#section4 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 3em;
+    background-color: #F9FCFB;
+} 
+
+
+#section4 h2 {
+    font-size: 2.5em;
+    text-align: center;
 }
 
-.line {
-    margin: 20;
-    position: relative;
-    width: 60%;
-    /* Adjust the width of the line to fill the container */
-    height: 3px;
-    /* Adjust the height of the line */
-    background-color: #0037AE;
-    /* Adjust the color of the line */
+.tip-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 80vw;
+    padding-top: 1.5em;
 }
 
-.line::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    width: 100%;
-    height: 2px;
-    /* Match the height of the line */
-    background-color: #0037AE;
+.tips {
+    padding: 1.5em;
+    text-align: left;
 }
 
-@media (min-width: 770px) {
+aside {
+    text-align: center;
+}
 
-    .line,
-    .line::after {
-        display: none;
-    }
+.highlight {
+    background-color: #b5ffff;
+}
 
-    .section-7-content {
-        gap: 70px;
-        justify-content: center;
-        align-items: center;
+@media screen and (min-width: 603px) {
+
+    .tip-container {
         display: grid;
-        grid-template-columns: 66% 33%;
-    }
-
-    .aside7 {
-        align-items: stretch;
-        align-self: flex-start;
-        padding: 0.5em 1em;
-        background-color: #0037AE;
-        color: #F9FCFB;
-    }
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 80vw;
+        padding: 3em 0em;
+    } 
 
 }
 
+/* -------------------------------------------------------------------------- */
+/*                         section 7 who to call first                        */
+/* -------------------------------------------------------------------------- */
+
+#section7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #B5C7E8; 
+    background-color: #D8ECEC;
+    padding: 2em;
+} 
+
+#section7 h2 { 
+    display: flex;
+    font-size: 2em;
+    padding: 0em 0em 1em 0em;
+    text-align: left;
+}
+
+@media screen and (min-width: 1045px) {
+    #section7 {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center; 
+    } 
+
+    #section7 h2 { 
+        font-size: 2em;
+        padding-bottom: 4.5em;
+        text-align: left;
+    }
+
+    #section7 p {
+        padding-top: 2em;
+        width: 50vw;
+        text-align: left;
+    } 
+
+}
 /* -------------------------------------------------------------------------- */
 /*                              section 8 donate                              */
 /* -------------------------------------------------------------------------- */
 
 #section8 {
-    padding: 2em 3em;
+    padding: 2em 5em;
     background-color: rgb(200, 72, 69);
     color: #F9FCFB;
+}
+
+#section8 h1 {
+    font-size: 4rem;
+    letter-spacing: 5px;
+    padding: 0em 0em 0.5em 0em;
 }
 
 #donate-today {
     position: relative;
     background-color: #b5ffff;
-    border-radius: 0.15rem;
+    border-radius: 0.3rem;
     padding: .75rem 1rem;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: bold;
     text-align: center;
     border-width: 0;
     color: #333333;
     cursor: pointer;
-    font-size: 14px;
-    font-weight: 500;
     transition: all 200ms;
     white-space: nowrap;
     user-select: none;
     -webkit-user-select: none;
-    touch-action: manipulation;
+    touch-action: manipulation; 
 }
 
 .donate-button {
@@ -733,6 +751,19 @@ footer li a {
     color: black;
 }
 
+.social-and-list2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+
 #left-list li {
     margin-right: 10;
 }
@@ -743,7 +774,6 @@ footer li a {
 
 #social-list li {
     margin-right: 10;
-    /* Adds spacing between list items */
     font-size: 1.6rem;
 }
 
