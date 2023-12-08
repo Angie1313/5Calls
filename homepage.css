@@ -269,6 +269,38 @@ h3 {
     cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+    #section2 {
+        padding: 10px; 
+    }
+    #section2 h2 {
+        font-size: 1.3rem; 
+        margin-bottom: 20px;
+    }
+    .search-section input[type="text"] {
+        width: 80%; 
+        margin-bottom: 20px; 
+    }
+    .bill-container {
+        padding: 20px; 
+        margin-bottom: 20px; 
+    }
+    .bills li {
+        font-size: 0.8rem;
+        line-height: 1.4; 
+        margin-bottom: 10px; 
+    }
+    .bills li a {
+        font-size: 0.8rem; 
+    }
+    #see-all-button {
+        width: auto; 
+        padding: 8px 10px;
+        font-size: 0.8rem; 
+        margin-top: 20px; 
+    }
+}
+
 
 /* section 3 */
 #section3 {
@@ -326,7 +358,14 @@ ol.how-to li {
     width: 80%;
 }
 
-
+@media screen and (max-width: 768px) {
+    #section3 h2 {
+        font-size: 1.5rem;
+    }
+    #section3 ol {
+        padding: 0 20px; 
+    }
+}
 /* section 5 */
 
 #section5 {
@@ -402,6 +441,14 @@ ol.how-to li {
 } */
 
 
+@media screen and (max-width: 768px) {
+    #section5 h2, #section5 h3 {
+        font-size: 1.5rem;
+    }
+    #section5 input[type="email"] {
+        width: 90%; /
+    }
+}
 
 
 /* -------------------------------------------------------------------------- */
